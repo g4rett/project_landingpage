@@ -16,7 +16,6 @@ body {
 
 .header-container {
     display: flex;
-    border: 3px solid red;
     justify-content: space-between;
     background-color: #1F2937;
     align-items: center;
@@ -30,7 +29,6 @@ body {
 .links {
     display: flex;
     flex-direction: row;
-    border: 3px solid red;
     color: #F9FAF8;
 }
 .links ul {
@@ -40,13 +38,14 @@ body {
 }
 .top-section {
     display: flex;
-    border: 3px solid red; 
-    gap: 20px;
+    gap: 10px;
     background-color: #1F2937;
     padding-left: 185px;
     padding-right: 185px;
     padding-top: 100px;
     padding-bottom: 100px;
+    min-height: 225px;
+    
     
 }
 .left-side, .right-side {
@@ -55,7 +54,7 @@ body {
 .left-side {
     display: flex;
     flex-direction: column;
-    border: 3px solid red;
+    gap: 5px;
 }
 .left-side .hero-title {
     font-size: 48px;
@@ -70,64 +69,160 @@ body {
 }
 .left-side button {
     max-width: 120px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
 }
 .right-side {
     display: flex;
-    border: 3px solid red;
     justify-content: center;
     align-items: center;
     background-color: gray;
+    color: #E5E7EB;
     
 }
 
 .card-section {
     display: flex;
-    border: 3px solid red;
     justify-content: center;
-    gap: 30px;
+   
+    
 }
-.card1, .card2, .card3, .card4 {
+.card-container {
     display: flex;
-    height: 100px;
-    width: 100px;
-    border: 3px solid red;  
+    flex-direction: column;
+    width: 100%;
+}
+.card-subtext p {
+    margin: 0;
+    padding: 0;
 }
 .quote-section {
     display: flex;
-    border: 3px solid red;
     flex-direction: column;
     background-color: #E5E7EB;
     
 }
-.quote-section blockquote {
-    display: flex;
-    max-width: 600px;
-    align-self: center;
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 300;
-    font-style: italic;
+.card-section {
+    padding: 30px;
 }
-.quote-section cite {
+.card {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.card-header {
+    align-self: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.card .card1, 
+.card .card2,
+.card .card3,
+.card .card4 {
+    border: 3px solid #3882F6;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.card-subtext {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.card-subtext .card-text1, 
+.card-subtext .card-text2,
+.card-subtext .card-text3,
+.card-subtext .card-text4 {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 3px solid white;
+}
+.quote-section {
+    display: flex;
+    padding: 125px 190px;
+}
+.quote-author {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    align-self: center;
+}
+.quote-author .author,
+.quote-author .quote {
+    display: flex;
+}
+.author {
     display: flex;
     align-self: flex-end;
 }
-.bottom-section {
-    display: flex;
-    border: 3px solid red;
-    justify-content: center;
-    padding: 40px;
+.quote p {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
 }
-.bottom-section .blue-banner {
+.author p {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bottom-section {
+    padding: 50px 185px;
+}
+.blue-banner {
+    display: flex;
     background-color: #3882F6;
-    width: 100%;
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+.blue-left, .blue-right {
+    flex: 1;
+}
+.blue-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 120px;
+}
+.blue-left {
+    padding-left: 100px;
+}
+.blue-header p {
+    font-weight: bold;
+    margin: 3px;
+    padding: 0;
+    font-size: 18px;
+    color: #F9FAF8;
+}
+.blue-subtext p {
+    margin: 3px;
+    padding: 0;
+    color: #E5E7EB;
+}
+.blue-right button {
+    background-color: #3882F6;
+    padding: 10px 40px;
+    border: 3px solid #F9FAF8;
+    border-radius: 10px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
     background-color: #1F2937;
     color: #E5E7EB;
 }
